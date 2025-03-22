@@ -1,6 +1,6 @@
 ﻿namespace ContainerTransportSystem;
 
-public class Container(
+public abstract class Container(
     float cargoWeight,
     float height,
     float containerWeight,
@@ -8,34 +8,31 @@ public class Container(
     SerialNumber serialNumber,
     float maximumPayload)
 {
-    protected float cargoWeight = cargoWeight;
-    protected float height = height;
-    protected float containerWeight = containerWeight;
-    protected float depth = depth;
-    protected SerialNumber serialNumber = serialNumber ?? new SerialNumber("S");
-    protected float maximumPayload = maximumPayload;
+    public float CargoWeight { get; protected set; } = cargoWeight;
+    public float Height { get; private set; } = height;
+    public float ContainerWeight { get; private set; } = containerWeight;
+    public float Depth { get; private set; } = depth;
+    public readonly SerialNumber SerialNumber = new("S");
+    public float MaximumPayload { get; } = maximumPayload;
 
-    public SerialNumber SerialNumber => serialNumber;
-    public float CargoWeight => cargoWeight;
-    public float MaximumPayload => maximumPayload;
 
     public virtual void EmptyContainer()
     {
-        cargoWeight = 0;
+        CargoWeight = 0;
     }
 
-    public virtual void LoadContainer(float payload)
+    public virtual void Load(float payload)
     {
-        if (payload > maximumPayload)
+        if (payload > MaximumPayload)
         {
             throw new OverfillException($"Payload is too big for the container {serialNumber}");
         }
-            
-        cargoWeight = payload;
+
+        CargoWeight = payload;
     }
-        
+
     public override string ToString()
     {
-        return $"Container {serialNumber}, Cargo: {cargoWeight}kg, Max Payload: {maximumPayload}kg";
+        return $"Container {serialNumber}, Cargo: {CargoWeight}kg, Max Payload: {MaximumPayload}kg";
     }
 }

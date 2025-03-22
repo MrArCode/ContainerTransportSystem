@@ -8,12 +8,10 @@ public class SerialNumber
     private const string ContainerName = "KON";
         
     private readonly string _serialNumber;
-    private string _containerType;
-
+    
     public SerialNumber(string containerType)
     {
         _serialNumber = ContainerName + "-" + containerType + "-" + _number;
-        _containerType = containerType;
         _number += 1;
     }
 

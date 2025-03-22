@@ -7,7 +7,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ed0af6d-ef05-4d58-8506-94fcd2c95c9a" name="Changes" comment="" />
+    <list default="true" id="2ed0af6d-ef05-4d58-8506-94fcd2c95c9a" name="Changes" comment="Initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ContainerTransportSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ContainerTransportSystem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/Container.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/Container.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/ContainerShip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/ContainerShip.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/FluidContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/FluidContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/GasContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/GasContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/ProductType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/ProductType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/RefrigeratedContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/RefrigeratedContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/SerialNumber.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/SerialNumber.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/bin/Debug/net9.0/ContainerTransportSystem.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/bin/Debug/net9.0/ContainerTransportSystem.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/bin/Debug/net9.0/ContainerTransportSystem.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/bin/Debug/net9.0/ContainerTransportSystem.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/bin/Debug/net9.0/ContainerTransportSystem.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/bin/Debug/net9.0/ContainerTransportSystem.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/obj/Debug/net9.0/ContainerTransportSystem.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/obj/Debug/net9.0/ContainerTransportSystem.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/obj/Debug/net9.0/ContainerTransportSystem.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/obj/Debug/net9.0/ContainerTransportSystem.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/obj/Debug/net9.0/ContainerTransportSystem.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/obj/Debug/net9.0/ContainerTransportSystem.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/obj/Debug/net9.0/ContainerTransportSystem.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/obj/Debug/net9.0/ContainerTransportSystem.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/obj/Debug/net9.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/obj/Debug/net9.0/ref/ContainerTransportSystem.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/obj/Debug/net9.0/ref/ContainerTransportSystem.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/obj/Debug/net9.0/refint/ContainerTransportSystem.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/obj/Debug/net9.0/refint/ContainerTransportSystem.dll" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,10 +36,19 @@
   <component name="DpaMonitoringSettings">
     <option name="firstShow" value="false" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1b81cb3be224213a6a73519b6e340a628d9a1fb8629c351a186a26f6376669/List.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ContainerTransportSystem/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 8
 }]]></component>
   <component name="ProjectId" id="2ufhcUr5eMqRmAGJBevGCHvavrl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -28,6 +57,7 @@
   "keyToString": {
     ".NET Project.ContainerTransportSystem.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,15 +94,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1742645616552</updated>
-      <workItem from="1742645617771" duration="761000" />
+      <workItem from="1742645617771" duration="7373000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1742646670226</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742646670226</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>

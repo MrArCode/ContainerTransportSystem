@@ -5,7 +5,7 @@ public class FluidContainer(
     float height,
     float containerWeight,
     float depth,
-    SerialNumber serialNumber,
+    SerialNumber? serialNumber,
     float maximumPayload,
     bool isDangerPayload)
     : Container(cargoWeight, height, containerWeight, depth, serialNumber ?? new SerialNumber("L"), maximumPayload),
@@ -16,23 +16,22 @@ public class FluidContainer(
         Console.WriteLine($"The fluid container {serialNumber} is a part of dangerous situation");
     }
 
-    public override void LoadContainer(float payload)
+    public override void Load(float payload)
     {
-        float totalWeight = cargoWeight + payload;
-        float levelOfFullFilled = totalWeight / maximumPayload * 100;
+        var totalWeight = CargoWeight + payload;
+        var levelOfFullFilled = totalWeight / MaximumPayload * 100;
 
         if ((isDangerPayload && levelOfFullFilled > 50) ||
             (!isDangerPayload && levelOfFullFilled > 90))
         {
             Notify();
-            throw new OverfillException($"Unsafe fill level for container {serialNumber}");
         }
             
-        base.LoadContainer(payload);
+        base.Load(payload);
     }
         
     public override string ToString()
     {
-        return $"Fluid Container {serialNumber}, Cargo: {cargoWeight}kg, Max Payload: {maximumPayload}kg, Dangerous: {isDangerPayload}";
+        return $"Fluid Container {serialNumber}, Cargo: {CargoWeight}kg, Max Payload: {MaximumPayload}kg, Dangerous: {isDangerPayload}";
     }
 }
