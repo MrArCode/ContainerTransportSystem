@@ -1,19 +1,19 @@
 ﻿namespace ContainerTransportSystem;
 
-public class FluidContainer(
-    float cargoWeight,
-    float height,
-    float containerWeight,
-    float depth,
-    SerialNumber? serialNumber,
-    float maximumPayload,
-    bool isDangerPayload)
-    : Container(cargoWeight, height, containerWeight, depth, serialNumber ?? new SerialNumber("L"), maximumPayload),
-        IHazardNotifier
+public class FluidContainer : Container
 {
+    private readonly bool _isDangerPayload;
+    
+    public FluidContainer(float cargoWeight, float height, float containerWeight, float depth, float maximumPayload, bool isDangerPayload)
+        : base(cargoWeight, height, containerWeight, depth, maximumPayload)
+    {
+        SerialNumber = new SerialNumber("L");
+        _isDangerPayload = isDangerPayload;
+    }
+
     public void Notify()
     {
-        Console.WriteLine($"The fluid container {serialNumber} is a part of dangerous situation");
+        Console.WriteLine($"The fluid container {SerialNumber} is a part of dangerous situation");
     }
 
     public override void Load(float payload)
@@ -21,8 +21,8 @@ public class FluidContainer(
         var totalWeight = CargoWeight + payload;
         var levelOfFullFilled = totalWeight / MaximumPayload * 100;
 
-        if ((isDangerPayload && levelOfFullFilled > 50) ||
-            (!isDangerPayload && levelOfFullFilled > 90))
+        if ((_isDangerPayload && levelOfFullFilled > 50) ||
+            (!_isDangerPayload && levelOfFullFilled > 90))
         {
             Notify();
         }
@@ -32,6 +32,6 @@ public class FluidContainer(
         
     public override string ToString()
     {
-        return $"Fluid Container {serialNumber}, Cargo: {CargoWeight}kg, Max Payload: {MaximumPayload}kg, Dangerous: {isDangerPayload}";
+        return $"Fluid Container {SerialNumber}, Cargo: {CargoWeight}kg, Max Payload: {MaximumPayload}kg, Dangerous: {_isDangerPayload}";
     }
 }

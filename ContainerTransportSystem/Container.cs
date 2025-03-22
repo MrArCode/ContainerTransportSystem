@@ -5,16 +5,15 @@ public abstract class Container(
     float height,
     float containerWeight,
     float depth,
-    SerialNumber serialNumber,
     float maximumPayload)
 {
     public float CargoWeight { get; protected set; } = cargoWeight;
     public float Height { get; private set; } = height;
     public float ContainerWeight { get; private set; } = containerWeight;
     public float Depth { get; private set; } = depth;
-    public readonly SerialNumber SerialNumber = new("S");
     public float MaximumPayload { get; } = maximumPayload;
-
+    
+    public SerialNumber SerialNumber { get; protected init; } = null!;
 
     public virtual void EmptyContainer()
     {
@@ -25,7 +24,7 @@ public abstract class Container(
     {
         if (payload > MaximumPayload)
         {
-            throw new OverfillException($"Payload is too big for the container {serialNumber}");
+            throw new OverfillException($"Payload is too big for the container {SerialNumber}");
         }
 
         CargoWeight = payload;
@@ -33,6 +32,6 @@ public abstract class Container(
 
     public override string ToString()
     {
-        return $"Container {serialNumber}, Cargo: {CargoWeight}kg, Max Payload: {MaximumPayload}kg";
+        return $"Container {SerialNumber}, Cargo: {CargoWeight}kg, Max Payload: {MaximumPayload}kg";
     }
 }

@@ -1,32 +1,40 @@
 ﻿namespace ContainerTransportSystem;
 
-public class RefrigeratedContainer(
-    float cargoWeight,
-    float height,
-    float containerWeight,
-    float depth,
-    SerialNumber? serialNumber,
-    float maximumPayload,
-    ProductType allowedProductType,
-    float containerTemperature)
-    : Container(cargoWeight, height, containerWeight, depth,
-        serialNumber ?? new SerialNumber("C"), maximumPayload)
+public class RefrigeratedContainer : Container
 {
     private readonly List<Product> _products = [];
     private float _currentWeight;
 
+    public RefrigeratedContainer(float cargoWeight,
+        float height,
+        float containerWeight,
+        float depth,
+        float maximumPayload,
+        ProductType allowedProductType,
+        float containerTemperature)
+        : base(cargoWeight, height, containerWeight, depth, maximumPayload)
+    {
+        AllowedProductType = allowedProductType;
+        ContainerTemperature = containerTemperature;
+        SerialNumber = new SerialNumber("C");
+    }
+
+    private ProductType AllowedProductType { get; }
+    private float ContainerTemperature { get; }
+
+
     public void LoadProduct(Product product)
     {
-        if (product.ProductType != allowedProductType)
+        if (product.ProductType != AllowedProductType)
         {
             throw new InvalidOperationException(
-                $"Cannot load product of type {product.ProductType}. Container only allows {allowedProductType}");
+                $"Cannot load product of type {product.ProductType}. Container only allows {AllowedProductType}");
         }
 
-        if (product.MinimalTemperature < containerTemperature)
+        if (product.MinimalTemperature < ContainerTemperature)
         {
             throw new InvalidOperationException(
-                $"Container temperature ({containerTemperature}) is higher than required for product {product.ProductName} (requires {product.MinimalTemperature})");
+                $"Container temperature ({ContainerTemperature}) is higher than required for product {product.ProductName} (requires {product.MinimalTemperature})");
         }
 
         if (_currentWeight + product.Weight > MaximumPayload)
@@ -53,6 +61,6 @@ public class RefrigeratedContainer(
     public override string ToString()
     {
         return
-            $"Refrigerated Container {serialNumber}, Product Type: {allowedProductType}, Temperature: {containerTemperature}°C, Products: {_products.Count}, Weight: {_currentWeight}kg/{MaximumPayload}kg";
+            $"Refrigerated Container {SerialNumber}, Product Type: {AllowedProductType}, Temperature: {ContainerTemperature}°C, Products: {_products.Count}, Weight: {_currentWeight}kg/{MaximumPayload}kg";
     }
 }

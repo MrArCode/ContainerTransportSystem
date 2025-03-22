@@ -1,14 +1,13 @@
 ﻿namespace ContainerTransportSystem;
 
-public class GasContainer(
-    float cargoWeight,
-    float height,
-    float containerWeight,
-    float depth,
-    float maximumPayload)
-    : Container(cargoWeight, height, containerWeight, depth, new SerialNumber("G"), maximumPayload),
-        IHazardNotifier
+public class GasContainer : Container, IHazardNotifier
 {
+    public GasContainer(float cargoWeight, float height, float containerWeight, float depth, float maximumPayload)
+        : base(cargoWeight, height, containerWeight, depth, maximumPayload)
+    {
+        SerialNumber = new SerialNumber("G");
+    }
+
     public override void EmptyContainer()
     {
         CargoWeight *= 0.05f;

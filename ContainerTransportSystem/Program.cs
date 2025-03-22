@@ -7,11 +7,11 @@ try
     var ship2 = new ContainerShip("Dragon", 28.0f, 750, 75000);
 
     // Create containers
-    var fluidContainer = new FluidContainer(0, 250, 2500, 600, null, 25000, true);
+    var fluidContainer = new FluidContainer(0, 250, 2500, 600, 15000,true);
     var gasContainer = new GasContainer(0, 250, 3000, 600, 20000);
 
     // Create refrigerated container for dairy products
-    var dairyContainer = new RefrigeratedContainer(0, 250, 3500, 600, null, 15000, ProductType.Dairy, 4.0f);
+    var dairyContainer = new RefrigeratedContainer(0, 250, 3500, 600, 15000, ProductType.Dairy, 4.0f);
 
     // Create products
     var milk = new Product("Milk", ProductType.Dairy, 6.0, 5000);

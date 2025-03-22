@@ -7,16 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ed0af6d-ef05-4d58-8506-94fcd2c95c9a" name="Changes" comment="Initial commit">
+    <list default="true" id="2ed0af6d-ef05-4d58-8506-94fcd2c95c9a" name="Changes" comment="Refactor">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ContainerTransportSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ContainerTransportSystem/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/Container.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/Container.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/ContainerShip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/ContainerShip.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/FluidContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/FluidContainer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/GasContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/GasContainer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/ProductType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/ProductType.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/RefrigeratedContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/RefrigeratedContainer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/SerialNumber.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/SerialNumber.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/bin/Debug/net9.0/ContainerTransportSystem.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/bin/Debug/net9.0/ContainerTransportSystem.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/bin/Debug/net9.0/ContainerTransportSystem.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/bin/Debug/net9.0/ContainerTransportSystem.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContainerTransportSystem/bin/Debug/net9.0/ContainerTransportSystem.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ContainerTransportSystem/bin/Debug/net9.0/ContainerTransportSystem.pdb" afterDir="false" />
@@ -94,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1742645616552</updated>
-      <workItem from="1742645617771" duration="7373000" />
+      <workItem from="1742645617771" duration="9074000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -104,7 +101,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742646670226</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Refactor">
+      <option name="closed" value="true" />
+      <created>1742653403537</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742653403537</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +120,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor" />
   </component>
 </project>
