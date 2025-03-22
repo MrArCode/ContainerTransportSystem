@@ -46,21 +46,3 @@ The application allows users to:
 4. **Unload and replace containers**
 5. **Transfer containers between ships**
 6. **Retrieve container and ship information**
-
-## Console Interface (Optional Feature)
-A console interface can be implemented to simulate system operations. Example flow:
-```
-List of container ships:
-None
-List of containers:
-None
-Available actions:
-1. Add a container ship
-```
-The system prompts for necessary details when adding containers and ships. Once added, users can load, remove, or transfer containers.
-
-## Future Enhancements
-- Improve UI for better user experience
-- Implement database storage for tracking shipments
-- Add simulation for container loading efficiency
-
