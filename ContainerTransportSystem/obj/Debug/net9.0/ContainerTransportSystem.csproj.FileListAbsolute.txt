@@ -1,0 +1,14 @@
+C:\Users\acpos\RiderProjects\ContainerTransportSystem\ContainerTransportSystem\bin\Debug\net9.0\ContainerTransportSystem.exe
+C:\Users\acpos\RiderProjects\ContainerTransportSystem\ContainerTransportSystem\bin\Debug\net9.0\ContainerTransportSystem.deps.json
+C:\Users\acpos\RiderProjects\ContainerTransportSystem\ContainerTransportSystem\bin\Debug\net9.0\ContainerTransportSystem.runtimeconfig.json
+C:\Users\acpos\RiderProjects\ContainerTransportSystem\ContainerTransportSystem\bin\Debug\net9.0\ContainerTransportSystem.dll
+C:\Users\acpos\RiderProjects\ContainerTransportSystem\ContainerTransportSystem\bin\Debug\net9.0\ContainerTransportSystem.pdb
+C:\Users\acpos\RiderProjects\ContainerTransportSystem\ContainerTransportSystem\obj\Debug\net9.0\ContainerTransportSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acpos\RiderProjects\ContainerTransportSystem\ContainerTransportSystem\obj\Debug\net9.0\ContainerTransportSystem.AssemblyInfoInputs.cache
+C:\Users\acpos\RiderProjects\ContainerTransportSystem\ContainerTransportSystem\obj\Debug\net9.0\ContainerTransportSystem.AssemblyInfo.cs
+C:\Users\acpos\RiderProjects\ContainerTransportSystem\ContainerTransportSystem\obj\Debug\net9.0\ContainerTransportSystem.csproj.CoreCompileInputs.cache
+C:\Users\acpos\RiderProjects\ContainerTransportSystem\ContainerTransportSystem\obj\Debug\net9.0\ContainerTransportSystem.dll
+C:\Users\acpos\RiderProjects\ContainerTransportSystem\ContainerTransportSystem\obj\Debug\net9.0\refint\ContainerTransportSystem.dll
+C:\Users\acpos\RiderProjects\ContainerTransportSystem\ContainerTransportSystem\obj\Debug\net9.0\ContainerTransportSystem.pdb
+C:\Users\acpos\RiderProjects\ContainerTransportSystem\ContainerTransportSystem\obj\Debug\net9.0\ContainerTransportSystem.genruntimeconfig.cache
+C:\Users\acpos\RiderProjects\ContainerTransportSystem\ContainerTransportSystem\obj\Debug\net9.0\ref\ContainerTransportSystem.dll
